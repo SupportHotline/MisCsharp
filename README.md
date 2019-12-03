@@ -2,15 +2,15 @@
 Various C# snippets which may be useful. It's also may be a little spaghetti.
 ___
 
-1. ## IBAN
-    - A Class snippet for "Regular Expressions" (Regex) matches to find "International Bank Account Numbers" (IBAN).
-    - Contains: 
-        1. Regex pettern to detect a possible IBAN
-        2. Enum for 72 "CountryIDs" (DE,FR,IT,ES,GB...)
-        3. A struct "CountryInfo" to relate an IBAN to ther origen country
-        4. An Dictionary <CountryId, CountryInfo>
-     - Example: 
-        ```cs
+## IBAN
+- A Class snippet for "Regular Expressions" (Regex) matches to find "International Bank Account Numbers" (IBAN).
+- Contains: 
+    - Regex pettern to detect a possible IBAN
+    - Enum for 72 "CountryIDs" (DE,FR,IT,ES,GB...)
+    - A struct "CountryInfo" to relate an IBAN to ther origen country
+    - An Dictionary <CountryId, CountryInfo>
+- Example: 
+        
                     String stringWithIBAN = "transferring 100€ to DE89 3704 0044 0532 0130 00 12:00 01-01-2020";
                     
                     //Returns a possible valid IBAN "DE89 3704 0044 0532 0130 00 12" " 12" is too much.
@@ -32,4 +32,5 @@ ___
                     string Country = cID.toString(); //DE
                     string CountryName = ci.Name; //Germany
                     }
-2. ## TBA
+         
+## TBA
