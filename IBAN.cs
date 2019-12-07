@@ -301,5 +301,10 @@ namespace Finance
             public String Name;
             public String IbanPattern;
         }
+                
+        public static List<T> EnumToList<T>()
+        {
+            return ((T[])Enum.GetValues(typeof(T))).ToList();
+        }
     }
 }
