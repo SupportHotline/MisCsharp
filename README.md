@@ -7,6 +7,7 @@ ___
 - Contains: 
     - Regex pettern to detect a possible IBAN
     - Enum for 72 "CountryIDs" (DE,FR,IT,ES,GB...)
+    - Generic EnumToList converter
     - A struct "CountryInfo" to relate an IBAN to ther origen country
     - An Dictionary <CountryId, CountryInfo>
 - Example: 
@@ -19,7 +20,7 @@ ___
                     CountryInfo cInfo;
                     //Generate a List<CountryId> which contains every Values of this enum and return the one 
                     //"Where" match the first two chars of the IBAN [DE]
-                    CountryId cID = ((CountryId[])Enum.GetValues(typeof(CountryId))).ToList().Where(x => 
+                    CountryId cID = EnumToList<CountryId>().Where(x => 
                     x.ToString() == regex.Value.Substring(0, 2)).First(); //Spaghetti
                     Countries.TryGetValue(cID, out cInfo);
 
