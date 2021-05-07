@@ -1,4 +1,4 @@
-// ==UserScript==
+// ===UserScript===
 // @name        Direct Download Button
 // @version     0.17
 // @description Direct YT Downloader
