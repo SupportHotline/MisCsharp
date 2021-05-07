@@ -1,6 +1,6 @@
 // ===UserScript===
 // @name        Direct Download Button
-// @version     0.17
+// @version     0.18
 // @description Direct YT Downloader
 // @author      Daniel FERRERI
 // @icon        https://www.youtube.com/s/desktop/2b66c0ce/img/favicon_32.png
